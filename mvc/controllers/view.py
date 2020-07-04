@@ -1,12 +1,11 @@
 import web
-import app
 
 render = web.template.render("mvc/views/")
 
-class Index():
+class View():
 
     def GET(self):
         try:
-            return render.index()
+            return render.view() # renderizando formulario.html
         except Exception as e:
             return "Error " + str(e.args)
