@@ -1,5 +1,4 @@
 import web
-import app
 
 render = web.template.render("mvc/views/")
 
