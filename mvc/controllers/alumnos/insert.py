@@ -9,3 +9,10 @@ class Insert():
             return render.insert() # renderizando formulario.html
         except Exception as e:
             return "Error " + str(e.args)
+
+    def POST(self):
+        try:
+            form = web.input()
+            print(form)
+        except Exception as e:
+            return "Error"
